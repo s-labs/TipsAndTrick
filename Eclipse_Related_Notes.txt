@@ -1,0 +1,18 @@
+Tip 1: Start the Eclipse with specific Workspace
+
+If we have multiple workspaces for eclipse.
+We can create the shortcuts for individual eclipse.
+For the shortcut set the target as below 
+"D:\from lappy\eclipse\eclipse.exe" -data "D:\from lappy\Eclipse_WorkSpace_Student_Tracking_system"
+
+check "tip_1.jpeg"
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+Tip 2: 
+Ctrl+Shift+R   to find the classes/JSPs in the workspace
+
+check "tip_2.jpeg"
+------------------------------------
+Tip 3:
+configure the debug
