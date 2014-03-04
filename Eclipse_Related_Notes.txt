@@ -16,3 +16,9 @@ check "tip_2.jpeg"
 ------------------------------------
 Tip 3:
 configure the debug
+
+----------------
+Tip 4:
+jbosstool for eclipse plugin .. which will be useful generating hibenate classes
+downloaded kepler eclipse which latest
+add install new software --> jboostools-hibernate - http://download.jboss.org/jbosstools/updates/stable/indigo/

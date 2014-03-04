@@ -1,0 +1,25 @@
+Tip : 1
+Convert the project to Eclipse web project using:
+mvn eclipse:eclipse -Dwtpversion=2.0
+
+
+------------
+SEVERE: Error configuring application listener of class org.springframework.web.context.ContextLoaderListener
+java.lang.ClassNotFoundException: org.springframework.web.context.ContextLoaderListener
+    at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1676)
+    at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1521)
+    at org.apache.catalina.core.DefaultInstanceManager.loadClass(DefaultInstanceManager.java:415)
+    at org.apache.catalina.core.DefaultInstanceManager.loadClassMaybePrivileged(DefaultInstanceManager.java:397)
+    at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:118)
+    at org.ap
+	
+	
+I had a similar problem when running a spring web application in an Eclipse managed tomcat. I solved this problem by adding maven dependencies in the project's web deployment assembly.
+
+    Open the project's properties (e.g., right-click on the project's name in the project explorer and select "Properties").
+    Select "Deployment Assembly".
+    Click the "Add..." button on the right margin.
+    Select "Java Build Path Entries" from the menu of Directive Type and click "Next".
+    Select "Maven Dependencies" from the Java Build Path Entries menu and click "Finish".
+
+You should see "Maven Dependencies" added to the Web Deployment Assembly definition.
